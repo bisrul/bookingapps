@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Booking</string>
+    <string name="description">Gunung Bromo adalah salah satu gunung api yang masih aktif di Indonesia. Gunung yang memiliki ketinggian 2.392 meter di atas permukaan laut ini merupakan destinasi andalan Jawa Timur.</string>
+    <string name="price">Rp. 60K</string>
+    <string name="quantity">/Person</string>
+
+</resources>

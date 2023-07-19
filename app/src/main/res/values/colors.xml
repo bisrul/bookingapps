@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textdark">#2A2B3D</color>
+    <color name="textwhite">#FFFFFF</color>
+    <color name="textgrey">#BFBFBF</color>
+    <color name="ungu">#6A5FE7</color>
+    <color name="ungu_muda">#E4F0FF</color>
+</resources>
