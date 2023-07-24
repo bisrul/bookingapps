@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1028810098886",
+    "firebase_url": "https://booking-d21e5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "booking-d21e5",
+    "storage_bucket": "booking-d21e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028810098886:android:78d80f4a1d266089002fc7",
+        "android_client_info": {
+          "package_name": "com.bkcreative.booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028810098886-av6btpfis2usajqtvpkaj6l215bh5j7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4Um6aiAmIH-1XlY1XZfNQNAM0dSQwwQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028810098886-av6btpfis2usajqtvpkaj6l215bh5j7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

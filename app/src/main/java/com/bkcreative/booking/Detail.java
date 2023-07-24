@@ -33,7 +33,7 @@ public class Detail extends AppCompatActivity{
         booknow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Detail.this,Home.class);
+                Intent intent = new Intent(Detail.this,Bookmark.class);
                 startActivity(intent);
                 finish();
             }

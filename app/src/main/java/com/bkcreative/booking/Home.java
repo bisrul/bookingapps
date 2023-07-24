@@ -32,6 +32,16 @@ public class Home extends AppCompatActivity{
                 finish(); // Close the splash screen activity
             }
         });
+
+        bookmark.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                // Start the main activity after the delay
+                Intent intent = new Intent(Home.this, Bookmark.class);
+                startActivity(intent);
+                finish(); // Close the splash screen activity
+            }
+        });
     }
 
 
