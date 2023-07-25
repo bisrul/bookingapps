@@ -36,8 +36,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        FirebaseApp.initializeApp(this);
-
 
         InputUsername = findViewById(R.id.emailfill);
         InputPass = findViewById(R.id.passwordfill);
