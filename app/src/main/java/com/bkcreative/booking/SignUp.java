@@ -36,9 +36,9 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SignUp extends AppCompatActivity implements View.OnClickListener{
     private EditText nameFill, emailFill, passwordFill;
-    DatabaseReference myRef2;
     private Button register;
     private TextView login;
+    DatabaseReference myRef2;
 
     
 

@@ -115,7 +115,7 @@
                 android:fontFamily="@font/poppins_light"
                 />
 
-            <TextView
+            <EditText
                 android:id="@+id/emailfill"
                 android:layout_width="235dp"
                 android:layout_height="35dp"
@@ -124,11 +124,14 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
                 android:text=" "
-                android:textSize="18dp"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="14dp"
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/rounded6_textfill"
                 android:textColor="@color/textgrey"
+                android:inputType="textEmailAddress"
                 />
 
             <TextView
@@ -147,7 +150,7 @@
                 android:layout_marginTop="15dp"
                 />
 
-            <TextView
+            <EditText
                 android:id="@+id/passwordfill"
                 android:layout_width="235dp"
                 android:layout_height="35dp"
@@ -156,11 +159,14 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
                 android:text=" "
-                android:textSize="18dp"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="14dp"
                 android:layout_marginTop="5dp"
                 android:gravity="center_vertical"
                 android:background="@drawable/rounded6_textfill"
                 android:textColor="@color/textgrey"
+                android:inputType="textPassword"
                 />
 
             <TextView
