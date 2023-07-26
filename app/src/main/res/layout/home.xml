@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -73,15 +74,16 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/notif"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/circle_button"
-                android:padding="12dp"
-                android:src="@drawable/notification"
+                android:src="@drawable/ic_notif_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout"
                 app:layout_constraintTop_toTopOf="parent">
 
             </ImageView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
@@ -128,7 +130,7 @@
                 android:id="@+id/filter"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
-                android:src="@drawable/filter_box"
+                android:src="@drawable/ic_filter_box"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -282,11 +284,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/rounded10_background"
                         android:elevation="2dp"
                         android:layerType="none"
                         android:scaleType="fitStart"
-                        android:src="@drawable/image1"
+                        android:src="@drawable/main_image"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -366,11 +367,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:background="@drawable/rounded10_background"
                         android:elevation="2dp"
                         android:layerType="none"
                         android:scaleType="fitStart"
-                        android:src="@drawable/image1"
+                        android:src="@drawable/main_image"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -497,6 +497,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-

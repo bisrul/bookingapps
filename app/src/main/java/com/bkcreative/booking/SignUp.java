@@ -63,7 +63,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 
 
     private void registerUser() {
-        final String name = nameFill.getText().toString().trim();
+        final String nama = nameFill.getText().toString().trim();
         final String email = emailFill.getText().toString().trim();
         final String password = passwordFill.getText().toString().trim();
 
@@ -71,7 +71,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         final String USERNAME_KEY = "usernamekey";
         final String username_key = "";
 
-        if (name.isEmpty()) {
+        if (nama.isEmpty()) {
             nameFill.setError(getString(R.string.input_error_name));
             nameFill.requestFocus();
             return;
@@ -101,15 +101,15 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
             return;
         }
 
-        final String text = emailFill.getText().toString().trim();
+        final String text = nameFill.getText().toString().trim();
         Log.v("cobo",text);
-        Query myRef = FirebaseDatabase.getInstance().getReference().child("User").orderByChild("email").equalTo(text);
+        Query myRef = FirebaseDatabase.getInstance().getReference().child("Users").orderByChild("nama").equalTo(text);
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot2) {
                 if (dataSnapshot2.exists()) {
                     Toast toast = Toast.makeText(SignUp.this,
-                            "Email Sudah Tertaftar", Toast.LENGTH_LONG);
+                            "User Name Terdaftar", Toast.LENGTH_LONG);
                     toast.show();
                     emailFill.setError("Email Sudah Terdaftar");
                     emailFill.requestFocus();
@@ -120,16 +120,16 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
                     //menyimpan data local storage
                     SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putString(username_key, email);
+                    editor.putString(username_key, nama);
                     editor.apply();
                     //Simpan Database
-                    myRef2 = FirebaseDatabase.getInstance().getReference("User").child(email);
+                    myRef2 = FirebaseDatabase.getInstance().getReference("Users").child(nama);
                     myRef2.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                             Log.v("cobo", email + "  2");
-                            Log.v("cobo", name + "  2");
-                            dataSnapshot.getRef().child("name").setValue(name);
+                            Log.v("cobo", nama + "  2");
+                            dataSnapshot.getRef().child("nama").setValue(nama);
                             dataSnapshot.getRef().child("email").setValue(email);
                             dataSnapshot.getRef().child("password").setValue(password);
                             Toast.makeText(SignUp.this, "Register Succesfully", Toast.LENGTH_LONG).show();
@@ -139,6 +139,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
                         public void onCancelled(@NonNull DatabaseError databaseError) {
                         }
                     });
+
+                startActivity(new Intent(SignUp.this,Home.class));
                 }
             }
             @Override
