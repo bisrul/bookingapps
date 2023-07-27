@@ -111,7 +111,7 @@
 
             <EditText
                 android:id="@+id/search"
-                android:layout_width="269dp"
+                android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@drawable/rounded10_textfillhome"
                 android:drawableStart="@drawable/ic_search_grey_15dp"
@@ -122,6 +122,7 @@
                 android:text="Search"
                 android:textColor="@color/textgrey"
                 android:textSize="14dp"
+                android:layout_marginRight="70dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/filter"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -293,9 +294,11 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_marginBottom="113dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="@+id/image1"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -376,9 +379,11 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="300dp"
+                        android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_marginBottom="113dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
                         app:cardCornerRadius="8dp"
                         app:layout_constraintBottom_toBottomOf="@+id/image2"
                         app:layout_constraintEnd_toEndOf="parent"
