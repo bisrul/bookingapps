@@ -98,7 +98,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
                     }
                     else{
-                        Toast.makeText(getApplicationContext(),"Email tidak ada!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Username tidak ada!", Toast.LENGTH_SHORT).show();
                         //loading
                         Login.setEnabled(true);
                         Login.setText("Masuk");
