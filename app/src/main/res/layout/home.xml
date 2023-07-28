@@ -275,7 +275,7 @@
                 android:orientation="vertical">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/des1"
+                    android:id="@+id/bromo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:ignore="InvalidId">
@@ -360,7 +360,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/des2"
+                    android:id="@+id/watukarung"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp">
@@ -373,7 +373,7 @@
                         android:elevation="2dp"
                         android:layerType="none"
                         android:scaleType="fitStart"
-                        android:src="@drawable/main_image"
+                        android:src="@drawable/des_dua"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -411,7 +411,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppins_semibold"
-                                    android:text="Bromo"
+                                    android:text="Watu Karung"
                                     android:textColor="@color/textdark"
                                     android:textSize="12dp"></TextView>
 
@@ -419,7 +419,93 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="@font/poppins_light"
-                                    android:text="Probolinggo, Indonesia"
+                                    android:text="Pacitan, Indonesia"
+                                    android:textColor="@color/textgrey"
+                                    android:textSize="12dp"></TextView>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rounded10_button_ungu_muda"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="60K"
+                                android:textColor="@color/ungu"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bukit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:elevation="2dp"
+                        android:layerType="none"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/des_tiga"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="113dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/image3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/image3">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:background="@drawable/rounded6_background"
+                            android:padding="15dp"
+                            app:layout_constraintBottom_toBottomOf="@id/image1"
+                            app:layout_constraintTop_toBottomOf="@+id/image1">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Bukit"
+                                    android:textColor="@color/textdark"
+                                    android:textSize="12dp"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:text="Gunung Kidul, Indonesia"
                                     android:textColor="@color/textgrey"
                                     android:textSize="12dp"></TextView>
 

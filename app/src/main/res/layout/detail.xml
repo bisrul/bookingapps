@@ -55,7 +55,8 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="560dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
         >
     <LinearLayout
         android:layout_width="wrap_content"
@@ -64,9 +65,10 @@
 
 
     <ImageView
+        android:id="@+id/gambar_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/image_detail"
+        android:src="@drawable/bromo_detail"
         android:layerType="none"
         android:adjustViewBounds="true"
         android:layout_marginTop="40dp"

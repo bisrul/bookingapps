@@ -31,6 +31,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
     String USERNAME_KEY = "usernamekey";
     String username_key = "";
+    String destinasi_key = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
     private void Userlogin(){
         final String nama = InputUsername.getText().toString().trim();
         final String pass = InputPass.getText().toString().trim();
+        final String destinasi = "";
         if (TextUtils.isEmpty(nama)) {
             Toast.makeText(getApplicationContext(), "Enter Username", Toast.LENGTH_SHORT).show();
             return;
@@ -78,6 +81,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                             SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY, MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             editor.putString(username_key, InputUsername.getText().toString());
+                            editor.putString(destinasi_key, destinasi);
                             editor.apply();
 
                             Intent gotoprofil = new Intent(
