@@ -74,7 +74,7 @@ public class Detail extends AppCompatActivity{
                 final String lokasi = "Probolinggo, Jawa timur";
                 final String harga   = "60K";
 
-                myRef = FirebaseDatabase.getInstance().getReference("Pesanan").child("nama");
+                myRef = FirebaseDatabase.getInstance().getReference("Pesanan").child(username_key_new);
                 myRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
